@@ -1,3 +1,40 @@
+/* ── NAV ───────────────────────────────────── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 3rem;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+nav.scrolled {
+  background: rgba(245,240,232,0.93);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 1px 0 rgba(27,67,50,0.1);
+}
+.nav-logo {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  color: var(--forest);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+.nav-logo em { font-style: italic; color: var(--gold-deep); }
+.nav-links { display: flex; gap: 2rem; list-style: none; }
+.nav-links a {
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--bark);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--forest-mid); }
+
+
 /* ── HERO ──────────────────────────────────── */
 .hero {
   position: relative;
