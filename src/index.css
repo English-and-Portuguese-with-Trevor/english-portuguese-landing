@@ -1,23 +1,31 @@
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 :root {
   /* Brazil-inspired palette — shared with the portfolio & flashcard app */
-  --cream:       #F5F0E8;
-  --cream-mid:   #EBE4D5;
-  --forest:      #1B4332;
-  --forest-mid:  #2D6A4F;
-  --leaf:        #52B788;
-  --gold:        #F4C430;
-  --gold-deep:   #C9970A;
-  --sky:         #1A6EA0;
-  --sky-light:   #56A0D3;
-  --ink:         #12231A;
-  --bark:        #4A5E54;
-  --serif: 'DM Serif Display', Georgia, serif;
-  --sans:  'Inter', system-ui, sans-serif;
+  --cream: #f5f0e8;
+  --cream-mid: #ebe4d5;
+  --forest: #1b4332;
+  --forest-mid: #2d6a4f;
+  --leaf: #52b788;
+  --gold: #f4c430;
+  --gold-deep: #c9970a;
+  --sky: #1a6ea0;
+  --sky-light: #56a0d3;
+  --ink: #12231a;
+  --bark: #4a5e54;
+  --serif: "DM Serif Display", Georgia, serif;
+  --sans: "Inter", system-ui, sans-serif;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background: var(--cream);
