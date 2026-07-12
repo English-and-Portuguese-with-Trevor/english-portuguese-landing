@@ -133,3 +133,86 @@
   right: 2%;
   transform: rotate(3deg);
 }
+
+
+/* ── LANGUAGE SECTIONS (shared) ────────────── */
+.lang-section { padding: 6.5rem 3rem; position: relative; }
+.lang-header { max-width: 640px; margin: 0 auto 3.5rem; text-align: center; }
+.lang-label {
+  font-size: 0.75rem; font-weight: 600; letter-spacing: 0.16em;
+  text-transform: uppercase; margin-bottom: 1rem;
+}
+.lang-header h2 {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4vw, 2.9rem);
+  line-height: 1.15;
+}
+.lang-header p { margin-top: 1rem; font-size: 1.02rem; line-height: 1.7; }
+.link-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.link-card {
+  border-radius: 18px;
+  padding: 1.9rem 1.6rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.link-card:hover { transform: translateY(-5px); }
+.link-icon { font-size: 1.7rem; }
+.link-card h3 { font-family: var(--serif); font-size: 1.15rem; line-height: 1.25; }
+.link-card span.desc { font-size: 0.85rem; line-height: 1.5; }
+.link-arrow { margin-top: auto; font-size: 0.82rem; font-weight: 500; }
+
+/* English — light band, sky accent */
+.lang-english { background: var(--cream); }
+.lang-english .lang-label { color: var(--sky); }
+.lang-english .lang-header h2 { color: var(--ink); }
+.lang-english .lang-header p { color: var(--bark); }
+.lang-english .link-card {
+  background: var(--cream-mid);
+  border: 1px solid rgba(26,110,160,0.18);
+}
+.lang-english .link-card:hover {
+  border-color: rgba(26,110,160,0.4);
+  box-shadow: 0 16px 40px rgba(26,110,160,0.15);
+}
+.lang-english .link-card h3 { color: var(--ink); }
+.lang-english .link-card span.desc { color: var(--bark); }
+.lang-english .link-arrow { color: var(--sky); }
+
+/* Portuguese — dark band, gold/leaf accent */
+.lang-portuguese { background: var(--forest); overflow: hidden; }
+.lang-portuguese::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: radial-gradient(circle, rgba(244,196,48,0.18) 1px, transparent 1px);
+  background-size: 44px 44px;
+  pointer-events: none;
+}
+.lang-portuguese::after {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 4px;
+  background: linear-gradient(90deg, var(--gold), var(--sky-light), var(--gold));
+}
+.lang-portuguese .lang-label { color: var(--gold); }
+.lang-portuguese .lang-header h2 { color: var(--cream); }
+.lang-portuguese .lang-header p { color: rgba(245,240,232,0.7); }
+.lang-portuguese .link-grid { position: relative; z-index: 1; }
+.lang-portuguese .link-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.lang-portuguese .link-card:hover {
+  border-color: rgba(244,196,48,0.35);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.3);
+}
+.lang-portuguese .link-card h3 { color: var(--cream); }
+.lang-portuguese .link-card span.desc { color: rgba(245,240,232,0.65); }
+.lang-portuguese .link-arrow { color: var(--leaf); }
