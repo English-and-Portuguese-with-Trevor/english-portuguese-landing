@@ -26,5 +26,6 @@
     "oxlint": "^1.71.0",
     "vite": "^8.1.1"
   },
-  "homepage": "https://englishandportuguesewithtrevor.com"
+  "homepage": "https://englishandportuguesewithtrevor.com",
+  "lint": "oxlint ."
 }
