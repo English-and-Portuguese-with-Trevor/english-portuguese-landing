@@ -15,8 +15,8 @@ export default function About() {
                     you need branches out directly from here.
                 </p>
                 <p>
-                    Below you'll find two sections - one for English, one for Português 
-                    - each with quick links to the tools and resources for that language. 
+                    Below you'll find two sections — one for English, one for Português 
+                    — each with quick links to the tools and resources for that language. 
                     Including a custom built flashcard app, reading and listening exercises
                     and more. 
                 </p>
